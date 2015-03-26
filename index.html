@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="nameApp">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+
+</head>
+<body ng-controller="NameCtrl">
+<ul>
+        <li ng-repeat="name in names">{{name}}</li>
+</ul>
+
+<form ng-submit="addName()">
+    <input type="text" ng-model="enteredName">
+    <input type="submit" value="add">
+</form>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.1/angular.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
+
+<!-- #16 https://github.com/sandime/screencasts/tree/gh-pages/introToAngular -->
