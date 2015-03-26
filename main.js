@@ -9,5 +9,10 @@ app.controller('NameCtrl', function ($scope){
         $scope.names.push($scope.enteredName);
         $scope.enteredName ='';
     };
+    //splice index of i, one name
+    $scope.removeName = function (){
+        var i = $scope.names.indexOf(name);
+        $scope.names.splice(i,1);
 
+    };
 });
